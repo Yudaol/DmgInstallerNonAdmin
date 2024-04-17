@@ -4,7 +4,9 @@ An dmg installer without admin privilege
 # simple version
 1- download release: Dmginstaller.app
 
-2- execute it!!
+2- extract
+
+3- execute it!!
 
 
 # hard...
