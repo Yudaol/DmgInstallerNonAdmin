@@ -32,7 +32,6 @@ def open_dmg_and_copy_app():
                 if selected_volume:
                     print("Volume monté:", selected_volume)
 
-                    # Continuez votre traitement ici
                     # Recherche du fichier .app dans le volume monté
                     app_found = False
                     for root, dirs, files in os.walk(os.path.join("/Volumes", selected_volume)):
@@ -43,6 +42,8 @@ def open_dmg_and_copy_app():
                                 # Copie du dossier .app dans le dossier Applications
                                 subprocess.run(["cp", "-R", app_path, applications_folder_path])
                                 print("Extraction terminée avec succès.")
+                                # Ouvrir l'application extraite
+                                subprocess.run(["open", "-a", os.path.basename(app_path)])
                                 break
                         if app_found:
                             break
