@@ -1,46 +1,42 @@
 # DmgInstallerNonAdmin
-An dmg installer without admin privilege
 
-# simple version
-1- download release: Dmginstaller.app
+A DMG installer without admin privileges.
 
-2- extract
+## Simple Version
 
-3- execute it!!
+1. Download the release: `Dmginstaller.app`.
+2. Extract the contents.
+3. Execute the application!
 
+## Advanced Version
 
-# hard...
-1- Download and extract the python file
+1. Download and extract the Python file.
+2. Open your terminal and run:
+    ```bash
+    python3 dmginstaller.py
+    ```
+    or provide the path to your Python file.
 
-2- open your terminal and type this:
-```
-python3 dmginstaller.py
-```
-or the path of your python file
+Follow the next steps in the application.
 
-and see next step in the app...
+## Building from Python to App
 
-# build from python to app
-1- install py2app
-```
-pip3 install py2app
-```
-2- build the setup.py
-```
-py2applet --make-setup dmginstaller.py
-```
-3- build the app
-```
-python3 setup.py py2app
-```
-4- find it in the dist folder 
+1. Install `py2app`:
+    ```bash
+    pip3 install py2app
+    ```
+2. Create the `setup.py` file:
+    ```bash
+    py2applet --make-setup dmginstaller.py
+    ```
+3. Build the application:
+    ```bash
+    python3 setup.py py2app
+    ```
+4. Find the application in the `dist` folder.
 
+### Note
 
+If the application doesn't appear in Launchpad, open it from your Applications folder first: `/Users/YOURNAME/Applications`.
 
-
-
-
-
-if the app doesn't appear on launchpad you should open it from your app folder first in /Users/YOUNAME/Applications
-
-Enjoy!!!
+Enjoy!
